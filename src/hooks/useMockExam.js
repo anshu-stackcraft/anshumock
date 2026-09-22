@@ -1,0 +1,2 @@
+import { useState } from 'react'
+export function useMockExam(questionCount = 100) { const [answers, setAnswers] = useState({}); const [marked, setMarked] = useState([]); const answer = (index, value) => setAnswers((current) => ({ ...current, [index]: value })); const toggleReview = (index) => setMarked((current) => current.includes(index) ? current.filter((item) => item !== index) : [...current, index]); return { answers, marked, answer, toggleReview, questionCount } }

@@ -1,0 +1,10 @@
+{
+  "name": "Exam Prep — UPSSSC PET & Competitive Exams",
+  "short_name": "Exam Prep",
+  "description": "Smart practice and mock tests for competitive exams.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#ff6a00",
+  "icons": [{ "src": "/anshulogo.jpg", "sizes": "512x512", "type": "image/jpeg" }]
+}

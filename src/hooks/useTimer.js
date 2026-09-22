@@ -1,0 +1,2 @@
+import { useEffect, useState } from 'react'
+export function useTimer(initialSeconds, enabled = true) { const [seconds, setSeconds] = useState(initialSeconds); useEffect(() => { if (!enabled || seconds <= 0) return; const timer = setInterval(() => setSeconds((value) => value - 1), 1000); return () => clearInterval(timer) }, [enabled, seconds]); return { seconds, minutes: Math.floor(seconds / 60), remainingSeconds: seconds % 60, expired: seconds === 0 } }
