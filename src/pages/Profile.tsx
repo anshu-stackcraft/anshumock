@@ -1,0 +1,1 @@
+import { Layout,Page } from './_layout'; export default function Profile(){return <Layout><Page title="Profile" text="Manage your learner profile."><div className="panel"><div className="avatar">A</div><h2>Anshul Kumar</h2><p>Exam learner • UPSSSC PET preparation</p></div></Page></Layout>}

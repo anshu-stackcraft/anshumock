@@ -1,0 +1,1 @@
+import { Layout,Page } from './_layout'; export default function Notes(){return <Layout><Page title="Notes & Revision" text="High-yield revision material."><div className="notes-grid">{['Indian Polity','Modern History','General Science','UP GK'].map(x=><div className="panel note-card" key={x}><h2>{x}</h2><small>Quick revision notes</small></div>)}</div></Page></Layout>}
