@@ -1,3 +1,5 @@
-import { petApi } from '../services/api'
-export const getMockTests = () => petApi.mockTests()
-export const submitMockResult = (payload) => petApi.results({ method: 'POST', body: JSON.stringify(payload) })
+import { saveAttempt, getAttempts } from '../utils/storage';
+
+export const saveMockResult = (result) => saveAttempt(result);
+export const getMockHistory = () => getAttempts();
+export const getMockHistoryByExam = (examId) => getAttempts().filter(a => a.examId === examId);
